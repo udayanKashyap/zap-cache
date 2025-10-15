@@ -1,10 +1,17 @@
 package com.kashyapudayan.zap_cache;
 
-/**
- * Hello world!
- */
+import com.kashyapudayan.zap_cache.controller.ConsoleInputController;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ConsoleInputController ic = new ConsoleInputController();
+        try {
+            while (true) {
+                // ic.displayMenu();
+                ic.handeInputs();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
